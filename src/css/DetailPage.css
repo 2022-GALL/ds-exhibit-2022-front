@@ -1,0 +1,10 @@
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile {
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+}
