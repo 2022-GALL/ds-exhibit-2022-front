@@ -1,0 +1,66 @@
+.btn_profile {
+    margin-top: 18px;
+    width: 80px;
+    height: 80px;
+}
+
+.div_infoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 32px;
+}
+
+.div_mypage {
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+}
+
+.div_workBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.work_title {
+    width: 80%;
+}
+
+#p_work {
+    float: left;
+}
+
+.btn_plus {
+    float: right;
+    margin-top: 5px;
+}
+
+.hr {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+}
+
+/* .div_mywork {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+} */
+
+.div_img {
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 42px;
+}
+
+.img {
+    margin-bottom: 20px;
+}
+
+.btn_delete {
+    margin-left: 45px;
+}
