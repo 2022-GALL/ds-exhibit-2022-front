@@ -1,10 +1,47 @@
 .detail {
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    background-color: rgb(237, 235, 235);
 }
-#profile {
+#department, #member {
+    font-size: 12px;
+}
+#div_profile {
+    text-align: left;
     background-color: white;
     width: 80%;
     padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+}
+hr {
+    width: 70%;
+}
+.profile_img {
+    width: 80px;
+    height: 80px;
+}
+.img {
+    height: 400px;
+}
+#description {
+    width: 80%;
+    margin-left: 10%;
+}
+#date {
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 10%;
+}
+h5 {
+    text-align: left;
+    margin-left: 10%;
+    padding-top: 50px;
+}
+#video {
+    display: flex;
+    justify-content: left;
+    margin-left: 10%;
 }

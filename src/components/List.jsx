@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import worksData from '../worksData';
 import { useNavigate } from 'react-router';
+import dummyImg from '../images/200x200_dummy.png'
 
 const List = () => {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ const List = () => {
             //     <Col>
                 <div className='col-md-2 mt-4' key={work.id} onClick={() => {navigate(`/computer/${work.id}`)}}>
                     <Card>
-                        <Card.Img variant="top" src="holder.js/100px160" />
+                        <Card.Img variant="top" src={dummyImg} />
                         <Card.Body>
                         <Card.Title>{work.name}</Card.Title>
                         <Card.Text>{work.team}</Card.Text>
