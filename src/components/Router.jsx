@@ -19,7 +19,6 @@ export default function Router() {
                 <Route exact path="/artdesign" element={<ArtDesignPage/>}></Route>
                 <Route exact path="/computer" element={<ComputerScience/>}></Route>
                 <Route exact path="/computer/1" element={<DetailPage/>}></Route>
-
                 <Route exact path="/joinpage" element={<JoinPage/>}></Route>
                 <Route exact path="/loginpage" element={<LoginPage/>}></Route>
                 <Route exact path="/registerpage" element={<RegisterPage/>}></Route>
