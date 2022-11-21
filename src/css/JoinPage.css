@@ -1,0 +1,17 @@
+#joinbtn {
+    
+    background-color: rgb(180,0,84);
+    border-color: rgb(180,0,84);
+    color: white;
+    border-radius: 5px;
+    margin:20px;
+}
+#warning {
+
+    color: rgb(180,0,84);
+    font-size:12px;
+}
+#footer {
+    color: rgb(180,0,84);
+    font-size:12px;
+}
