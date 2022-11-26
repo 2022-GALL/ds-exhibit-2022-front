@@ -10,11 +10,11 @@ const List = () => {
         return (
             <div className='parent'>
                 <div className='card' key={work.id} onClick={() => {navigate(`/computer/${work.id}`)}}>
-                    <div>
+                    <div className='card_inner'>
                         <img className='card_img' src={dummyImg} />
                         <div>
                         <div className='card_name'>{work.name}</div>
-                        <div>{work.team}</div>
+                        <div className='card_team'>{work.team}</div>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,13 @@ body {
     margin: 30px;
     padding: 12px;
 }
+.card_inner {
+    height: 320px;
+}
 .card_name {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 26px;
+    margin-bottom: 18px;
+}
+.card_team {
+    font-size: 13px;
 }
