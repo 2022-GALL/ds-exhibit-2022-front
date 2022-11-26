@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(237, 235, 235);
+}
+.parent {
+    display: inline-block;
+}
+.card {
+    width: 230px;
+    margin: 30px;
+    padding: 12px;
+}
+.card_name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
