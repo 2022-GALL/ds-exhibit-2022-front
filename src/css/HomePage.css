@@ -1,4 +1,14 @@
+.div {
+    height: 100vh;
+    padding: 21px;
+}
 #duksung {
+    color: #A72250;
+    font-size: 88px;
+    text-align: left;
+    font-weight: 700;
+}
+#grad {
     color: #A72250;
     font-size: 70px;
     text-align: left;
@@ -8,4 +18,11 @@
     color: rgb(136, 135, 135);
     font-size: 60px;
     text-align: left;
+}
+.gradImg {
+    width: 400px;
+    float: right;
+    opacity: 0.3;
+    position: absolute;
+    transform: translate(10%, -60%);
 }

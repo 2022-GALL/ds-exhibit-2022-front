@@ -29,9 +29,16 @@ function Hamburger() {
                 </NavDropdown>
                 <NavDropdown title="Art &amp; Design" id="basic-nav-dropdown">
                 </NavDropdown>
+                
             </Nav>
             </Navbar.Collapse>
+            <Container>
+            <Navbar.Brand href="/joinpage">SignIn</Navbar.Brand>
+            <Navbar.Brand href="/loginpage">LogIn</Navbar.Brand>
         </Container>
+        </Container>
+        
+        
         </Navbar>
     );
 }

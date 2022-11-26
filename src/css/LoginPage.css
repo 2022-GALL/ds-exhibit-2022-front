@@ -1,0 +1,14 @@
+.form1 {
+
+
+}
+#label1 {
+    padding-right:8px;
+}
+#loginbtn {
+    background-color: rgb(180,0,84);
+    border-color: rgb(180,0,84);
+    color: white;
+    border-radius: 5px;
+    margin:20px;
+}

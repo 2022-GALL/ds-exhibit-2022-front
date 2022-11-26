@@ -5,7 +5,13 @@ import GlobalConPage from "../pages/GlobalConvergence/GlobalConPage";
 import SciTechPage from "../pages/ScienceTech/SciTechPage";
 import ComputerScience from "../pages/ScienceTech/ComputerScience";
 import DetailPage from "../pages/Detail/DetailPage";
+
+import JoinPage from '../pages/MyPage/JoinPage';
+import LoginPage from '../pages/MyPage/LoginPage';
+import RegisterPage from '../pages/MyPage/RegisterPage';
+
 import MyPage from "../pages/MyPage/MyPage";
+
 
 export default function Router() {
     return (
@@ -16,8 +22,14 @@ export default function Router() {
                 <Route exact path="/sciencetech" element={<SciTechPage/>}></Route>
                 <Route exact path="/artdesign" element={<ArtDesignPage/>}></Route>
                 <Route exact path="/computer" element={<ComputerScience/>}></Route>
+                <Route exact path="/computer/1" element={<DetailPage/>}></Route>
+                <Route exact path="/joinpage" element={<JoinPage/>}></Route>
+                <Route exact path="/loginpage" element={<LoginPage/>}></Route>
+                <Route exact path="/registerpage" element={<RegisterPage/>}></Route>
+
                 <Route exact path="/computer/:id" element={<DetailPage/>}></Route>
                 <Route exact path="/mypage" element={<MyPage/>}></Route>
+
             </Routes>
         </BrowserRouter>
     )
