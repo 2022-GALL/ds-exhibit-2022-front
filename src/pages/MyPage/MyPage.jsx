@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import '../../css/MyPage.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser, faPlus, faPen, faTrash } from "@fortawesome/free-solid-svg-icons";
@@ -25,7 +26,11 @@ function MyPage(props) {
             <div className='div_img'>
                 <img src={dummyImg} className='img'></img>
                 <FontAwesomeIcon icon={faPen} className='btn_edit'/>
-                <FontAwesomeIcon icon={faTrash} className='btn_delete'/>
+                <FontAwesomeIcon icon={faTrash} className='btn_delete' onClick={() => {
+                    axios.get(`/mypage/delete?id=${props.works.id}`)
+                    alert('삭제 되었습니다');
+                    window.location.href = "/mypage";
+                }}/>
             </div>
         </div>
         </>
