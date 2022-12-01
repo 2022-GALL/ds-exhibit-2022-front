@@ -48,6 +48,16 @@ const items = [
 function GalleryPage(props) {
     const [dropdownValue, setDropdownValue] = useState();
 
+    function handleCategoryChange(event) {
+        setDropdownValue(event.target.value);
+    }
+    // function getFilteredList() {
+    //     if (!dropdownValue) {
+    //         return 
+    //     }
+    //     return works.filter((item) => item.major === dropdownValue)
+    // }
+
     return (
         <div>
             <div className='div_search'>
@@ -57,11 +67,12 @@ function GalleryPage(props) {
                     onSelect={(value, selectedItems) => {
                         console.log(value);
                         setDropdownValue(value);
+                        // handleCategoryChange
                     }}
                     value={dropdownValue}
                 />
             </div>
-            <List />
+            <List dropdown={dropdownValue}/>
         </div>
     );
 }

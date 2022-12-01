@@ -1,18 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import '../../css/DetailPage.css';
-import worksData from '../../worksData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser, faCopyright, faCircle } from "@fortawesome/free-solid-svg-icons";
-import dummyImg from '../../images/200x200_dummy.png'
 import List from '../../components/List';
 
-const DetailPage = () => {
+const DetailPage = (props) => {
     const {id} = useParams();
-    const thisWork = worksData.find((work) => {
-        console.log(work);
+    const thisWork = props.work.find((list) => {
+        console.log(list);
 
-        return work.id == id;
+        return list.id == id;
     })
 
     return (
@@ -21,15 +19,15 @@ const DetailPage = () => {
 
             <div id='div_profile'>
                 <p id='title'>{thisWork.name}</p>
-                <p id='department'>컴퓨터공학과, <span id='year'>2021</span></p>
+                <p id='department'>{thisWork.major}<span id='year'>, 2021</span></p>
                 <br></br>
                 <hr></hr>
-                <p id='team'>{thisWork.team}</p>
-                <p id='member'>김덕성, 이컴공, 강덕조, 차미고</p>
+                <p id='team'>{thisWork.authorName}</p>
+                <p id='member'>{thisWork.member}</p>
                 <p id='email'>email@duksung.ac.kr</p>
             </div>
 
-            <img src={dummyImg} className='img'></img>
+            {/* <img src={dummyImg} className='img'></img> */}
             <p id='description'>{thisWork.description}</p>
             <p id='date'>2022.03.01 - 2022.11.10</p>
             <hr></hr>
