@@ -1,7 +1,8 @@
 import React from "react";
+import List from "../../components/List";
 
 export default function GlobalConPage() {
     return (
-        <h1>글로벌 융합</h1>
+        <List></List>
     )
 }
